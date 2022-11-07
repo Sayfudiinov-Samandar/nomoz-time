@@ -1,0 +1,142 @@
+.hero{
+    position: relative;
+    z-index: 10;
+}
+.hero-box__top{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-box__form{
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+}
+.hero-box__form-input{
+    width: 100%;
+    max-width: 450px;
+    border: none;
+    padding: 12px 20px 12px 15px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    background-color: #14162b95;
+    color: #f9fafb;
+}
+.hero-box{
+    position: relative;
+    top: 340px;
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #10121b66;
+    backdrop-filter: blur(20px);
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+    
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.list__item-pr{
+    display: flex;
+    justify-content: space-evenly;
+}
+.list__item-date-box{
+    display: inline-flex;
+    margin: 0 auto ;
+}
+.list__item-date{
+    font-size: 17px;
+    font-weight: 500;
+    color: #f9fafb;
+
+}
+
+
+.list__item{
+    width: calc(15.3% - 20px);
+    min-width: 130px;
+    font-size: 16px;
+    background-color: #9297b321;
+    border-radius: 14px;
+    border: 1px solid #10121b66;
+    padding: 20px;
+    transition: 0.3s ease;
+    cursor: default;
+
+    &:hover{
+        background-color: #10121b66;
+        transform: scale(1.02);
+    }
+}
+
+.item__title{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6em;
+    border-bottom: 1px solid #71779040;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.list__time{
+    margin: 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6em;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-box__sort-by{
+    width: 30%;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-left: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.sort{
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 16px;    
+    transition: 0.3s;
+
+    border: 1px solid #10121b66;
+    background-color:#9297b321;
+    color: #f9fafb;
+
+    &:hover{
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: #10121b66;
+    }
+
+}
+
+.hero-box__sort-month{
+    border-radius: 0;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.hero-box__sort-day{
+    border-radius: 0;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}

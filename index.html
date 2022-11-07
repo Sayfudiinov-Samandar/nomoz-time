@@ -4,21 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Nomoz vaqti</title>
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
-<body>
-    <header class="site-header">
-        <div class="container">
+<body class="site-body">
+    <div class="bg-oposity">
+        <div class="bg-img">
 
         </div>
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-title-box">
+                <h1 class="site-title">
+                    <p class="site-title">
+                        Nomoz vaqti
+                    </p>
+                    <p class="site-title site-title__region">
+    
+                    </p>
+                </h1>
+            </div>
+        </div>
     </header>
-
     <main class="site-main">
         <section class="hero">
             <div class="container">
+                <div class="hero-box">
+                    <h2 class="visually-hidden ">
+                        Nomoz vaqtlari
+                    </h2>
+                    <div class="hero-box__top">
+                        <form class="hero-box__form">
+                            <input class="hero-box__form-input" type="text" placeholder="Enter your region:">
+                        </form>
+                        <div class="hero-box__sort-by">
+                            <button class="hero-box__sort-day sort" data-data="day">To day</button>
+                            <button class="hero-box__sort-week sort" data-data="week">Week</button>
+                            <button class="hero-box__sort-month sort" data-data="monthly">Month</button>
+                        </div>
+                    </div>
+                    <ul class="hero-box__result-list list">
+                    </ul>
 
+                </div>
             </div>
         </section>
     </main>
@@ -28,5 +58,7 @@
 
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

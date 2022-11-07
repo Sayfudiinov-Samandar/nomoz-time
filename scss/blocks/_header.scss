@@ -1,0 +1,19 @@
+.site-title-box{
+    position: absolute;
+    z-index: 12;
+    top: 110px;
+    left: calc(50% + -230px);
+
+}
+.site-title{
+    margin: 0;
+    color: #f9fafb;
+    font-family: "Poppins"; 
+    font-size: 220%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.site-title__region{
+    text-align: center;
+}

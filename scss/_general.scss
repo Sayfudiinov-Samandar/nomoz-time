@@ -25,13 +25,36 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
+
   /* font-size: 16px; */
-  /* font-weight: 400; */
+  font-weight: 400; 
   /* line-height: var(--main-line-height); */
 }
 
 /* STICKY-FOOTER */
 .site-main{
   flex-grow: 1;
+}
+
+.bg-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0e0e0e52;
+  backdrop-filter: blur(8px);
+  font-family: "Poppins", "Arial", sans-serif; 
+}
+
+.bg-oposity{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/images/h-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
