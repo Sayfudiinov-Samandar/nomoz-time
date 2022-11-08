@@ -9,12 +9,12 @@ const elResultList=document.querySelector(".hero-box__result-list")
 const elDataSortBtn=document.querySelector(".hero-box__sort-by")
 
 let inputValue
+let toDay
 
 
 
 let toDayDate= new Date()
 toDayDate=toDayDate.toString().slice(8, 10);
-
 
 function makeli(obj) {
     elResultList.innerHTML=""
@@ -79,6 +79,8 @@ function makeli(obj) {
      </li>
     `    
 }
+
+
 function getWeekTime(elm) {
     elResultList.innerHTML=""
     elm.forEach(obj => {
@@ -148,7 +150,7 @@ function getWeekTime(elm) {
 
 async function weekGetTime(reg,dataDay,month="present/") {
     try {
-       const res = await fetch(`https://islomapi.uz/api/${month}${dataDay || "day"}?region=${reg || "Toshkent"}&month=${toDayDate}`)
+       const res = await fetch(`https://islomapi.uz/api/${month}${dataDay || "day"}?region=${reg || "Toshkent"}&month=${toDay}`)
         const data=await res.json()
         getWeekTime(data)
     } catch (error) {
@@ -157,12 +159,11 @@ async function weekGetTime(reg,dataDay,month="present/") {
 }
 
 
-
-
 async function getTimeNomoz(reg) {
     try {
-       const res = await fetch(`https://islomapi.uz/api/present/day?region=${reg || "Toshkent"}&month=${toDayDate}`)
+       const res = await fetch(`https://islomapi.uz/api/present/day?region=${reg || "Toshkent"}`)
         const data=await res.json()
+        toDay = data.date.slice(5,7);
         makeli(data)
     } catch (error) {
         alert("Hududingizni nato'g'ri kiritingiz!")
@@ -197,8 +198,6 @@ elDataSortBtn.addEventListener("click",(evt)=>{
         weekGetTime(inputValue, evt.target.dataset.data,"")
     }
 })
-
-
 
 getTimeNomoz()
 
