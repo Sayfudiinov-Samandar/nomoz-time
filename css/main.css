@@ -562,8 +562,15 @@ body {
   transition: 0.3s ease;
   cursor: default;
 }
-.list__item:hover {
+
+.show {
   background-color: rgba(16, 18, 27, 0.4);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.yel {
+  background-color: rgba(216, 142, 14, 0.4);
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }

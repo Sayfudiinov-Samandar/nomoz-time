@@ -77,12 +77,20 @@
     transition: 0.3s ease;
     cursor: default;
 
-    &:hover{
-        background-color: #10121b66;
-        transform: scale(1.02);
-    }
+    // &:hover{
+    //     background-color: #10121b66;
+    //     transform: scale(1.02);
+    // }
+}
+.show{
+    background-color: #10121b66;
+    transform: scale(1.02);
 }
 
+.yel{
+    background-color: #d88e0e66;
+    transform: scale(1.02);  
+}
 .item__title{
     margin-top: 20px;
     font-size: 20px;
