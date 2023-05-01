@@ -16,21 +16,22 @@ naw = Number(naw.toString().slice(16,18))+Number(naw.toString().slice(19,21));
 
 function changeStyle(array) {
 
+    console.log(array);
     if (naw > (Number(array.times.hufton.slice(0, 2)) + Number(array.times.hufton.slice(3, 5)))) {
-        let huf = "show"
+        let huf = "show?"
         makeli(array, huf, "")
     } else if (naw > (Number(array.times.shom_iftor.slice(0, 2)) + Number(array.times.shom_iftor.slice(3, 5)))) {
-        let shom = "show"
+        let shom = "show?"
             makeli(array, "", shom)
     }else if (naw > (Number(array.times.asr.slice(0, 2)) + Number(array.times.asr.slice(3, 5)))) {
-        let asr = "show"
+        let asr = "show?"
         makeli(array, "", "", asr)
     }else if (naw > (Number(array.times.peshin.slice(0, 2)) + Number(array.times.peshin.slice(3, 5)))) {
-        let pesh = "show"
+        let pesh = "show?"
         makeli(array, "", "", "", pesh)
     }else if (naw > (Number(array.times.quyosh.slice(0, 2)) + Number(array.times.quyosh.slice(3, 5)))) {
-        let bom = "show"
-        let quy="yel"
+        let bom = "show?"
+        let quy="yel?"
         makeli(array, "", "", "", "", bom, quy)
     }
 }
